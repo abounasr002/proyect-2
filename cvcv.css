@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    list-style: none;
+    overflow-x: hidden;
+    border-style:outset;
+  }
+  
+  
+  
+  header .container {
+  background: linear-gradient(to bottom, rgb(240, 149, 149), rgba(0, 0, 0, 0.681)100%);
+      padding: 20px ;
+      display: flex;
+      justify-content: space-between;
+      color: aliceblue;
+      font-style: italic;
+  }
+  
+  .identité {
+      text-align: center;
+      margin-top: 30px;
+  }
+  
+  .infos-perso p {
+      text-align: right;
+  }
+  
+  h2 {
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-weight:900;
+      font-size: 1.2rem;
+      font-style: italic;
+  }
+  
+  .container img {
+      height: 130px;
+      width: 70px;
+      transform: translateX(50%);
+      border-radius: 200px;
+      border: 2px solid rgb(0, 255, 0);
+  }
+  
+.compétences{
+    position: relative;
+}
+
+  .profil, .formation, .autres-informations, .compétences, .experience, .qualités{
+      border: 1px solid rgb(42, 42, 30);
+      background-color: rgb(233, 233, 233);
+      cursor: pointer;
+      border-radius: 30px;
+      padding: 10px;
+  }
+  
+  main {
+      display: grid;
+      grid-template-columns: 60% 30%;
+  }
+  .left-part h2 {
+      text-align: center;
+      margin-top: 20px;
+  }
+  .experience-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 90%;
+      transform: translateX(20px);
+  }
+  article:last-child {
+      margin-bottom: 20px;
+  }
+
+  article {
+      width: 30%;
+      padding: 100px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      transition: 0.5s ease-in;
+      box-shadow:7px 1px 6px 1px rgb(64 64 47)
+  }
+
+article:hover{
+    transform: translateY(-5px);
+
+
+}
+  
+  .experience h4 {
+      font-size: 1.4rem;
+      margin-top: 20px;
+  
+  }
+  
+  aside{
+    margin-top: 70px;
+  }
+.right-part div {
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    
+  }
+
+  .right-part div p{
+    margin-left: 10px;
+    line-height: 32px;
+    margin: auto;
+    padding: auto;
+
+  }
+
+  .right-part div h2 {
+    margin-left: 9px;
+    margin-top: 9px;
+  }
+
+footer .container{
+    background: linear-gradient(to bottom, rgb(240, 149, 149), rgba(0, 0, 0, 0.681)100%);
+    color: white;
+    padding-bottom: 15px;
+    text-align: center;
+}
+/*media queries*/
+
+@media (max-width: 942px){
+    .experience h4 {
+        font-size: 1 rem;
+    }
+ article{
+    width: 40%
+ }
+.infos-perso{
+    display: none;
+}
+.container img{
+    height: 50px;
+    width: 50px;
+}
+}
+/*media queries*/
+
+
+
+/*media queries*/
+
+@media (max-width:600px ){
+
+    .experience h4 {
+        font-size: 0.9rem;
+    }
+    .identité {
+       margin: 0 auto;
+      
+    }
+    .container img{
+        display: none;
+    }
+    .infos-perso{
+        display: none;
+    }
+  
+    article{
+        width: 100%;
+        flex-wrap:wrap;
+        margin-right: 70px;
+    }
+
+    .left-part{
+width: 100%;
+
+
+    }
+
+    .right-part{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    main{
+        display: block;
+    }
+}
+
+.nom img{
+    height: 30px;
+    width: 30px;
+}
+
+.experience p{
+    line-height: 2;
+}
+
